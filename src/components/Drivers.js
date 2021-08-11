@@ -5,7 +5,6 @@ import { BrowserRouter as Switch, Link, Route } from "react-router-dom";
 // import Driver from "./Driver";
 import CountUpAnimation from "./CountUpAnimation";
 import Spinner from "./Spinner";
-import TeamColors from "./TeamColors";
 
 const Drivers = () => {
   const [error, setError] = useState("");
@@ -39,7 +38,52 @@ const Drivers = () => {
     fetchStandings();
   }, [fetchStandings]);
 
-  const teamColor = (team) => {};
+  const teamColor = (team) => {
+    let teamColor = {
+      backgroundColor: "#FFF",
+      color: "#FFF",
+    };
+
+    switch (team) {
+      case "mercedes":
+        teamColor.backgroundColor = "#03BFB5";
+        teamColor.color = "#000";
+        break;
+      case "mclaren":
+        teamColor.backgroundColor = "#FF8700";
+        teamColor.color = "#000";
+        break;
+      case "red_bull":
+        teamColor.backgroundColor = "#0600EF";
+        break;
+      case "ferrari":
+        teamColor.backgroundColor = "#DC0000";
+        break;
+      case "haas":
+        teamColor.backgroundColor = "#FFFFFF";
+        teamColor.color = "#000";
+        break;
+      case "alpine":
+        teamColor.backgroundColor = "#0090FF";
+        teamColor.color = "#000";
+        break;
+      case "alphatauri":
+        teamColor.backgroundColor = "#2B4562";
+        break;
+      case "alfa":
+        teamColor.backgroundColor = "#900000";
+        break;
+      case "williams":
+        teamColor.backgroundColor = "#005AFF";
+        break;
+      case "aston_martin":
+        teamColor.backgroundColor = "#006F62";
+        break;
+      default:
+    }
+
+    return teamColor;
+  };
 
   if (isLoaded) {
     return (
@@ -81,11 +125,9 @@ const Drivers = () => {
                         >
                           <span
                             className="driver-number"
-                            style={
-                              <TeamColors
-                                team={item.Constructors[0].constructorId}
-                              />
-                            }
+                            style={teamColor(
+                              item.Constructors[0].constructorId
+                            )}
                           >
                             {item.Driver.permanentNumber}
                             {"  "}
