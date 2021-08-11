@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* width: 90%; */
+}
+
+.lateral {
+  padding: auto;
+  /* background-color: greenyellow; */
+}
+
+.driver-card {
+  /* background-color: gold; */
+  width: 100%;
+}
+
+#photo {
+  float: right;
+  height: auto;
+  width: 452px;
+  /* background-color: green; */
+  position: absolute;
+  right: 0%;
+}
+
+.container-pic {
+  float: right;
+  /* background-color: violet; */
+  width: 100%;
+  padding-top: 100px;
+  position: relative;
+}
+
+.surname {
+  margin-top: 240px;
+  width: 512px;
+  float: right;
+  background-color: rgba(27, 27, 27, 0.9);
+  height: 75px;
+  position: relative;
+  z-index: 20;
+}
+
+.background-surname {
+  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 3000%;
+  font-size: 10vw;
+  font-style: italic;
+  color: hsla(0, 0%, 100%, 0.034);
+  /* position: absolute; */
+  line-height: 0.6;
+  /* top: 2rem; */
+  left: 50%;
+  text-transform: uppercase;
+  padding: 20px 3%;
+
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 22%, 0.24),
+    hsla(0, 0%, 0%, 0) 95%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+}

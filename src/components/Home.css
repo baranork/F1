@@ -1,0 +1,79 @@
+.home-square {
+  width: 40%;
+  margin-top: 100px;
+  height: 400px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5% 5% 5% 5%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.home-square:hover {
+  transform: scale(0.93, 0.93);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+.home-glass {
+  height: 80%;
+  border-radius: 5%;
+}
+.home-photo {
+  border-radius: 5% 5% 0 0;
+  max-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+}
+
+.home-track-pic {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.home-bottom {
+  height: 20%;
+}
+
+.home-right {
+  padding-top: 7px;
+  float: right;
+  padding-right: 10px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.home-right .little {
+  float: right;
+  font-weight: 300;
+  font-size: 0.75em;
+  font-style: normal;
+}
+
+.home-left {
+  height: 100%;
+  padding-left: 15px;
+  width: 10%;
+  float: left;
+  display: flex;
+  border-radius: 0 0 0 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-flag {
+  border-radius: 10%;
+  margin: auto;
+  display: inline-block;
+}
+
+.home-flag-img {
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.home-countdown {
+  padding-bottom: 15px;
+}
