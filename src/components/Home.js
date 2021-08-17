@@ -65,7 +65,7 @@ const Home = () => {
       <header className="App-header">
         <Route exact path={`/about`}></Route>
         <div className="home-countdown">
-          Next race in: <CountDown deadline={returnCountDownDate()} />
+          Next kkkkrace in: <CountDown deadline={returnCountDownDate()} />
         </div>
         <NextRaceCard circuit={circuit} country={country} items={items} date={date} sliceTime={items.time}/>
       </header>

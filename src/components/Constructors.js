@@ -11,7 +11,7 @@ const Constructors = () => {
   const [items, setItems] = useState([]);
 
   const fetchStandings = useCallback(async () => {
-    fetch("http://ergast.com/api/f1/current/constructorStandings.json")
+    fetch("https://ergast.com/api/f1/current/constructorStandings.json")
       .then((res) => res.json())
       .then(
         (result) => {

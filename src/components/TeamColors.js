@@ -19,7 +19,6 @@ const TeamColors = (props) => {
         break;
       case "mclaren":
         teamColor.backgroundColor = "#FF8700";
-        teamColor.color = "#000";
         break;
       case "red_bull":
         teamColor.backgroundColor = "#0600EF";

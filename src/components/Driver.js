@@ -11,7 +11,7 @@ function Driver() {
   const [results, setResults] = useState([]);
 
   const fetchDriverData = useCallback(async () => {
-    var link = `http://ergast.com/api/f1/2021/drivers/hamilton.json`;
+    var link = `https://ergast.com/api/f1/2021/drivers/hamilton.json`;
     // var link = `http://ergast.com/api/f1/2021/drivers/${this.props.match.params.driverId}.json`;
     // var resultsLink = `http://ergast.com/api/f1/current/drivers/${this.props.match.params.driverId}/results.json`;
 

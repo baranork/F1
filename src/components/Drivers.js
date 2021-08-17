@@ -15,7 +15,7 @@ const Drivers = () => {
   const fetchStandings = useCallback(async () => {
     axios({
       method: "get",
-      url: "http://ergast.com/api/f1/current/driverStandings.json",
+      url: "https://ergast.com/api/f1/current/driverStandings.json",
       responseType: "stream",
     })
       .then(function (result) {
